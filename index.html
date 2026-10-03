@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotiBox プライバシーポリシー</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#30363d; --accent:#4493f8; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family:system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;
+         line-height:1.75; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:2em 0 .5em; padding-bottom:4px; border-bottom:1px solid var(--line); }
+  .meta { color:var(--muted); font-size:.9rem; margin:0 0 1.5em; }
+  .summary { border:1px solid var(--line); border-radius:8px; padding:12px 16px; }
+  a { color:var(--accent); }
+  ul { padding-left:1.4em; }
+  hr { border:none; border-top:1px solid var(--line); margin:3em 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>NotiBox プライバシーポリシー</h1>
+<p class="meta">提供者: eidoslab ／ 施行日: 2026年10月3日</p>
+
+<p class="summary"><strong>要約：</strong>NotiBox は受け取った通知をお使いの端末の中だけに保存します。通知の内容を開発者や第三者のサーバーへ送信することはありません。アプリにはインターネット通信の権限がなく、広告・アクセス解析・クラッシュ収集のツールも組み込んでいません。</p>
+
+<h2>1. 取り扱う情報</h2>
+<p>NotiBox は、ユーザーが「通知へのアクセス」を許可した場合に限り、端末に届いた通知から次の情報を読み取り、端末内に保存します。</p>
+<ul>
+  <li>通知を送ったアプリの名前・パッケージ名・アイコン</li>
+  <li>通知のタイトル、本文、受信日時</li>
+  <li>通知に含まれる画像</li>
+</ul>
+<p>あわせて、お気に入り・アルバム・フィルターなど、ユーザーがアプリ内で行った設定も端末内に保存します。</p>
+
+<h2>2. 利用目的</h2>
+<p>上記の情報は、通知の履歴を表示・検索・整理する機能のためだけに使います。それ以外の目的には使いません。</p>
+
+<h2>3. 保存場所と外部送信</h2>
+<ul>
+  <li>情報はアプリ専用の端末内ストレージ（データベースとファイル）にのみ保存します。</li>
+  <li>NotiBox はインターネット通信の権限を持たず、情報を開発者・第三者・外部サーバーへ送信しません。</li>
+  <li>Android の自動バックアップ（Google ドライブへのバックアップ）と端末間のデータ移行の対象から、アプリのデータを除外しています。</li>
+  <li>広告、アクセス解析、クラッシュレポートなどの外部 SDK は使用していません。</li>
+</ul>
+
+<h2>4. ユーザーの操作による持ち出し</h2>
+<p>次の場合に限り、ユーザー自身の操作によって情報が端末内のアプリ専用領域の外に出ます。いずれも開発者には送信されません。</p>
+<ul>
+  <li><strong>バックアップ：</strong>設定画面からバックアップを実行すると、ユーザーが選んだ保存先に ZIP ファイルを書き出します。保存先（端末内、クラウドストレージなど）の管理はユーザーと保存先サービスに委ねられます。</li>
+  <li><strong>共有：</strong>画像の共有を選ぶと、Android の共有機能を通じて、ユーザーが選んだアプリに画像を渡します。</li>
+</ul>
+
+<h2>5. 保存期間と削除</h2>
+<ul>
+  <li>保存した通知は、アプリ内からいつでも削除できます。削除した通知はゴミ箱に移り、ゴミ箱から完全に削除できます。</li>
+  <li>受信から30日を過ぎた画像付きの通知は、お気に入りや手動アルバムに入れたものを除き、自動でゴミ箱へ移ります。ゴミ箱に30日間置かれた項目は自動で完全に削除されます。</li>
+  <li>アプリをアンインストールすると、端末内に保存したすべてのデータが削除されます（ユーザーが書き出したバックアップファイルは除きます）。</li>
+</ul>
+
+<h2>6. 使用する権限</h2>
+<ul>
+  <li><strong>通知へのアクセス（通知リスナー）：</strong>通知を記録するための中核機能に必要です。ユーザーが Android の設定でいつでも取り消せます。</li>
+  <li><strong>通知の送信：</strong>動作確認用のテスト通知を表示するために使います。</li>
+  <li><strong>インストール済みアプリの参照（ランチャーに表示されるアプリに限定）：</strong>通知を送ったアプリの名前とアイコンを表示するために使います。</li>
+</ul>
+
+<h2>7. 子どものプライバシー</h2>
+<p>NotiBox は13歳未満の子どもを対象としたアプリではありません。</p>
+
+<h2>8. ポリシーの変更</h2>
+<p>このポリシーを変更する場合は、このページを更新し、施行日を改めます。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>eidoslab ／ <a href="mailto:eidoslab.dev@gmail.com">eidoslab.dev@gmail.com</a></p>
+
+<hr>
+
+<h1 lang="en">NotiBox Privacy Policy</h1>
+<p class="meta" lang="en">Provider: eidoslab / Effective: October 3, 2026</p>
+<div lang="en">
+<p class="summary"><strong>Summary:</strong> NotiBox stores the notifications you receive only on your device. It never sends notification content to the developer or any third-party server. The app has no internet permission and contains no advertising, analytics, or crash-reporting SDKs.</p>
+
+<h2>1. Information handled</h2>
+<p>Only if you grant Notification Access, NotiBox reads the following from notifications and stores it on your device: the posting app's name, package name and icon; the notification title, text and time; and images included in notifications. Your in-app settings (favorites, albums, filters) are also stored on the device.</p>
+
+<h2>2. Purpose</h2>
+<p>This information is used solely to display, search and organize your notification history.</p>
+
+<h2>3. Storage and transmission</h2>
+<ul>
+  <li>Data is stored only in the app's private on-device storage.</li>
+  <li>The app has no internet permission and does not transmit data to the developer, third parties or any server.</li>
+  <li>App data is excluded from Android Auto Backup (Google Drive) and device-to-device transfer.</li>
+  <li>No advertising, analytics or crash-reporting SDKs are used.</li>
+</ul>
+
+<h2>4. Data you export yourself</h2>
+<ul>
+  <li><strong>Backup:</strong> a ZIP file is written to a location you choose. That location is managed by you and the service you choose.</li>
+  <li><strong>Sharing:</strong> images are passed to the app you select via Android's share sheet.</li>
+</ul>
+<p>Neither is sent to the developer.</p>
+
+<h2>5. Retention and deletion</h2>
+<ul>
+  <li>You can delete stored notifications at any time; deleted items go to the Trash and can be permanently deleted.</li>
+  <li>Image notifications older than 30 days, except favorites and items in manual albums, are moved to the Trash automatically. Items in the Trash for 30 days are permanently deleted.</li>
+  <li>Uninstalling the app deletes all data stored on the device (except backup files you exported).</li>
+</ul>
+
+<h2>6. Permissions</h2>
+<ul>
+  <li><strong>Notification Access:</strong> required for the core feature of recording notifications. You can revoke it in Android settings at any time.</li>
+  <li><strong>Post notifications:</strong> used to show a test notification.</li>
+  <li><strong>Visibility of installed apps (launcher apps only):</strong> used to show the name and icon of the app that posted a notification.</li>
+</ul>
+
+<h2>7. Children</h2>
+<p>NotiBox is not directed to children under 13.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, this page will be updated with a new effective date.</p>
+
+<h2>9. Contact</h2>
+<p>eidoslab / <a href="mailto:eidoslab.dev@gmail.com">eidoslab.dev@gmail.com</a></p>
+</div>
+</main>
+</body>
+</html>
